@@ -1,6 +1,6 @@
 # NNRTree
 
-This is a C++ class wrapper around the Boost RTree library.
+This is a C++ wrapper class around the Boost RTree library.
 
 ## Limitations
 1. Since the dimension (DIM) of the RTree is a compile-time constant, users have to manually define the dimension and appropriately modify the member functions in NNRTree.cpp for arbitrary dimensions. A good workaround is setting an upperbound dimension (say 10) and whenever you are working with k < DIM, you can set the rest of the (DIM-k) dimensions to be zero.
