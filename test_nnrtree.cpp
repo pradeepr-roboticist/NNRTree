@@ -1,8 +1,10 @@
 #include "NNRTree.h"
+#include <iostream>
 
 int main()
 {
-    NNRTree n;
+    size_t const dim = 7;
+    NNRTree n(dim);
     double pt0[] = {1, 2, 3, 4, 5, 6, 7};
     double pt1[] = {10, 2, 3, 4, 5, 6, 7};
     double pt2[] = {2, 2, 3, 4, 5, 6, 7};
